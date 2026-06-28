@@ -1,0 +1,20 @@
+{
+  "name": "Demonstração de Recursos PWA",
+  "short_name": "PWA Demo",
+  "description": "Uma demonstração interativa dos principais recursos de Progressive Web App",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FAFAF9",
+  "theme_color": "#111110",
+  "lang": "pt-BR",
+  "categories": ["developer", "utilities"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

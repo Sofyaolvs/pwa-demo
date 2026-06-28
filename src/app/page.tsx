@@ -161,6 +161,8 @@ export default function Home() {
   const log = useCallback((msg: string, type: LogType = 'info') => {
     const ts = new Date().toLocaleTimeString('pt-BR', { hour12: false })
     setLogs((prev) => [...prev.slice(-49), { id: ++idRef.current, ts, msg, type }])
+    const consoleFn = type === 'error' ? console.error : type === 'warn' ? console.warn : console.log
+    consoleFn(`[PWA ${ts}] ${msg}`)
   }, [])
 
   const refreshCache = useCallback(async () => {

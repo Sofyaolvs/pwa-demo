@@ -254,7 +254,7 @@ export default function Home() {
         icon: '/icon.svg',
         tag: 'pwa-demo',
         renotify: true,
-      })
+      } as NotificationOptions)
       n.onclick = () => { window.focus(); n.close() }
       log('Notificação demo enviada', 'success')
     } else {
